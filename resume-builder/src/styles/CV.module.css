@@ -1,0 +1,14 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.left {
+    width: 45%;  /* Adjust as needed */
+    padding: 10px; /* Optional, for spacing */
+}
+
+.right {
+    width: 45%; /* Adjust as needed */
+    padding: 10px; /* Optional, for spacing */
+}
