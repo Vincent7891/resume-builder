@@ -23,6 +23,16 @@
     margin-bottom: 20px;
 }
 
+textarea {
+    width: 100%;  /* or whatever width you desire */
+    height: 100px;  /* or whatever height you desire */
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+    resize: vertical;  /* allows users to resize textarea vertically */
+}
+
+
 .details-container {
     padding-top: 20px;
 }

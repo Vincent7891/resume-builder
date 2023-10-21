@@ -11,7 +11,8 @@ export default function CV() {
         company: 'Your Company',
         startDate: '01/06/2020',
         endDate: 'Current',
-        description: 'Your Description'
+        description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+
     }]);
 
     const [educationalInfo, setEducationalInfo] = useState({
@@ -50,9 +51,9 @@ export default function CV() {
                     <div className={styles.mainHeader}>
                         <div className={styles.name}>{generalInfo.name}</div>
                         <div className={styles.emailNumberCityContainer}>
-                            <div>{generalInfo.email}</div>
-                            <div>{generalInfo.number}</div>
-                            <div>{generalInfo.city}</div>
+                            <div className={styles.email}>{generalInfo.email}</div>
+                            <div className={styles.number}>{generalInfo.number}</div>
+                            <div className={styles.city}>{generalInfo.city}</div>
                         </div>
                     </div>
 
@@ -91,7 +92,7 @@ export default function CV() {
                                         <div className={styles.endDate}>{info.endDate}</div>
                                     </div>
                                 </div>
-                                <div className={styles.jobDescription}>
+                                <div className={styles.companyName}>
                                     {info.company}
                                 </div>
                                 <div className={styles.jobDescription}>
@@ -102,39 +103,6 @@ export default function CV() {
 
                         ))}
                     </div>
-
-                    {/* {professionalExperiences.map((info) => (
-                        <React.Fragment key={info.id}>
-                            <p><strong>Job Title:</strong> {info.jobTitle}</p>
-                            <p><strong>Company:</strong> {info.company}</p>
-                            <p><strong>startDate:</strong> {info.startDate}</p>
-                            <p><strong>End date:</strong> {info.endDate}</p>
-                            <p><strong>description:</strong> {info.description}</p>
-                            <br />
-                        </React.Fragment>
-                    ))} */}
-
-                    {/* <p><strong>Full Name:</strong> {generalInfo.name}</p>
-                    <p><strong>Email:</strong> {generalInfo.email}</p>
-                    <p><strong>Phone Number:</strong> {generalInfo.number}</p>
-                    <p><strong>City:</strong> {generalInfo.city}</p>
-                    <br />
-                    <p><strong>Degree:</strong> {educationalInfo.degree}</p>
-                    <p><strong>University:</strong> {educationalInfo.university}</p>
-                    <p><strong>Grade:</strong> {educationalInfo.grade}</p>
-                    <p><strong>Start Date:</strong> {educationalInfo.startDate}</p>
-                    <p><strong>End Date:</strong> {educationalInfo.endDate}</p>
-                    <br />
-                    {professionalExperiences.map((info, ID) => (
-                        <React.Fragment key={ID}>
-                            <p><strong>Job Title:</strong> {info.jobTitle}</p>
-                            <p><strong>Company:</strong> {info.company}</p>
-                            <p><strong>startDate:</strong> {info.startDate}</p>
-                            <p><strong>End date:</strong> {info.endDate}</p>
-                            <p><strong>description:</strong> {info.description}</p>
-                            <br />
-                        </React.Fragment>
-                    ))} */}
                 </div>
             </div>
         </div>

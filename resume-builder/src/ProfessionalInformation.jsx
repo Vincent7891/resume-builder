@@ -96,13 +96,14 @@ export default function ProfessionalInformation({
                         <p>
                             <strong>Description:</strong>
                             <br />
-                            <input
+                            <textarea
                                 placeholder='...'
                                 name='description'
                                 value={experience.description}
                                 onChange={(e) => handleInputChange(e, experience.id)}
-                            />
+                            ></textarea>
                         </p>
+
                         {professionalExperiences.length >= 2 && (
                         <button onClick={() => handleDeleteExperience(experience.id)}>
                             Delete Experience

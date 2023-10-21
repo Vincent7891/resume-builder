@@ -2,12 +2,14 @@
     padding: 0px;
     margin: 0px ;
     box-sizing: border-box;
+    font-size: 18px;
+
 }
 
 .container {
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     align-items:center;
 }
 
@@ -20,12 +22,11 @@
     width: 600px; /* Adjust as needed */
     height: calc(600px*1.41);
 }
-
-.right {
-
+.right{
 }
-
 .paper{
+    position: sticky;
+    top: 20px; 
     display: grid;
     justify-self: center;
     align-self: center;
@@ -69,6 +70,20 @@
     margin-bottom: 5px;
     font-size: 32px;
 
+}
+
+.name{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.email, .number, .city {
+    font-size: 20px;
+}
+
+.companyName{
+    font-style: italic;
+    font-size: 20px;
 }
 
 .educationInfo > *{
