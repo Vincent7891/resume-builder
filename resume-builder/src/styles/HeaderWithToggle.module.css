@@ -1,7 +1,15 @@
 .header-container{
     display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 10px;
+    height: 75px;
+}
+
+.leftSide{
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .profile-image{
@@ -16,4 +24,8 @@
 
 .header-text{
     font-size: 25px;
+}
+
+.borderBottom{
+    border-bottom: solid black 2px;
 }

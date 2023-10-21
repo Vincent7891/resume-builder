@@ -1,14 +1,37 @@
+*{
+    padding: 0px;
+    margin: 0px ;
+    box-sizing: border-box;
+}
+
 .container {
+    height: 100vh;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+    align-items:center;
 }
 
 .left {
-    width: 45%;  /* Adjust as needed */
-    padding: 10px; /* Optional, for spacing */
+    padding: 15px; /* Optional, for spacing */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 600px; /* Adjust as needed */
+    height: calc(600px*1.41);
 }
 
 .right {
-    width: 45%; /* Adjust as needed */
-    padding: 10px; /* Optional, for spacing */
+
+}
+
+.paper{
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    width: 600px; /* Adjust as needed */
+    height: calc(600px*1.41);
+    padding: 15px; /* Optional, for spacing */
+    border: solid black 1px;
+    box-shadow: gray 2px 2px 2px 2px;
 }

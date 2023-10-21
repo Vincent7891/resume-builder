@@ -2,3 +2,14 @@
     display: flex;
     flex-direction: column;
 }
+
+.generalInfoContainer{
+    /* display: flex;
+    flex-direction: column; */
+    border: solid black 2px;
+    width: 500px;
+    border-radius: 50px;
+    padding: 10px;
+    
+}
+

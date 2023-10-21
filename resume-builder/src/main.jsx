@@ -9,9 +9,9 @@ import CV from './CV.jsx'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <App />
-    <GeneralInformation/>
-    <Education/>
+    {/* <App /> */}
+    {/* <GeneralInformation/> */}
+    {/* <Education/> */}
     {/* <ProfessionalInformation/> */}
     <CV/>
   </React.StrictMode>,
