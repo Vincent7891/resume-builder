@@ -103,13 +103,15 @@ export default function ProfessionalInformation({
                                 onChange={(e) => handleInputChange(e, experience.id)}
                             />
                         </p>
+                        {professionalExperiences.length >= 2 && (
                         <button onClick={() => handleDeleteExperience(experience.id)}>
                             Delete Experience
                         </button>
+                    )}
                     </div>
                 ))}
 
-            {showDetails && <button className={styles.addButton} onClick={handleAddExperience}>Add Other Experience</button>}
+            {showDetails && professionalExperiences.length < 3 && <button className={styles.addButton} onClick={handleAddExperience}>Add Other Experience</button>}
         </div>
     );
 }

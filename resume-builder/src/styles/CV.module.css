@@ -35,3 +35,100 @@
     border: solid black 1px;
     box-shadow: gray 2px 2px 2px 2px;
 }
+
+.mainHeader{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.emailNumberCityContainer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+}
+
+.emailNumberCityContainer > * {
+    border-right: 2px solid black;  /* Adjust the color as needed */
+    padding-right: 5px;
+    padding-left: 5px;
+
+}
+
+.emailNumberCityContainer > *:last-child {
+    border-right: none;
+    margin-right: 0;
+}
+
+.educationTitle{
+    border-bottom: 2px solid black;
+    padding-top: 10px;
+    margin-bottom: 5px;
+    font-size: 32px;
+
+}
+
+.educationInfo > *{
+    padding-left: 10px;  
+    padding-right: 10px;
+}
+.containerForUniversityAndDate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.containerForDegreeGradeAndDate{
+    display: flex;
+    justify-content: space-between;
+}
+
+.university{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.degreeAndGradeContainer{
+    display: flex;
+    font-style: italic;
+}
+
+.dateContainer{
+    display: flex;
+    gap: 5px;
+
+}
+.comma{
+    padding-right: 3px;
+}
+
+.lineBreak{
+    border-bottom: 2px solid black;
+    padding-top: 10px;
+    margin-bottom: 5px;
+}
+
+.experienceTitle{
+    border-bottom: 2px solid black;
+    padding-top: 10px;
+    margin-bottom: 5px;
+    font-size: 32px;
+}
+
+.containerForWorkTitleAndDate{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.jobTitle{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.experienceContainer > * {
+    padding-left: 10px;  
+    padding-right: 10px;
+}

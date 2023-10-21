@@ -13,3 +13,69 @@
     
 }
 
+/* GeneralInformation.module.css */
+
+.generalInfoContainer {
+    border: 1px solid #e2e2e2;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+.details-container {
+    padding-top: 20px;
+}
+
+input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #e2e2e2;
+    border-radius: 5px;
+    font-size: 14px;
+    outline: none;
+}
+
+input:focus {
+    border-color: #007bff; /* Change this to any desired focus color */
+    box-shadow: 0 0 3px rgba(0, 123, 255, 0.5); /* Change rgba values to match focus color */
+}
+
+button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: block; 
+    margin: 20px auto 0 auto;
+    width: 200px; 
+    text-align: center;  
+}
+button:hover {
+    background-color: #0056b3; /* Darken on hover */
+}
+.addButton, button {
+    height: 40px;  
+}
+.addButton {
+    margin-top: 15px;
+    display: block; /* Overriding the previous inline-block property */
+    margin-left: auto; 
+    margin-right: auto;
+    width: fit-content; /* Make the width only as wide as needed */
+}
+
+.experience-block + .experience-block {
+    margin-top: 30px; /* Increase the top margin for better separation */
+}
+
+
+.experience-block + .experience-block {
+    margin-top: 10px;
+}
+
+
